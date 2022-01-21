@@ -293,7 +293,8 @@
 	--color-menu-dots-icon: #fff;
 	--color-savings-plan-button-hover-background: #1f232a;
 	--color-savings-plan-indicator-day-number: #fff;
-    --tr-color-luminance1: #1f232a
+    --tr-color-luminance1: #1f232a;
+    --tr-color-background2: #8090a0;
 }
 
 ::-webkit-scrollbar {
