@@ -189,12 +189,10 @@
 	--color-savings-plan-overview-hint: #8090a0;
 	--color-savings-plan-interval-text: #8a9bab;
 	--color-savings-plan-interval-background: #f4f4f4;
-	--color-savings-plan-button-hover-background: #eef3f5;
 	--color-savings-plan-button-active-background: #e6eef1;
 	--color-savings-plan-indicator-foreground: #029dfe;
 	--color-savings-plan-indicator-warning-foreground: #ffb211;
 	--color-savings-plan-indicator-background: #e7ecee;
-	--color-savings-plan-indicator-day-number: #000;
 	--color-savings-plan-indicator-day-label: #8090a0;
 	--color-savings-plan-flow-button-positive-background: #e8fcf0;
 	--color-savings-plan-flow-button-positive-icon: #22d466;
@@ -280,7 +278,6 @@
 	--color-checkbox-checked-disabled-background: #7fcdff;
 	--color-change-pin-desc-text: #8090a0;
 	--color-graph-icon-outline: #bac1c4;
-	--color-menu-dots-icon: #000;
 	--color-clock-icon: #b8bdc0;
 	--color-profile-icon: #b8bdc0;
 	--color-cross-icon-background: #fce8e6;
@@ -294,10 +291,9 @@
 	--color-download-app-button-background-apple: #000;
 	--color-download-app-button-background-google: #009dff;
 	--color-menu-dots-icon: #fff;
-	--color-savings-plan-button-hover-background: var(
-		--color-list-item-background-hover
-	);
+	--color-savings-plan-button-hover-background: #1f232a;
 	--color-savings-plan-indicator-day-number: #fff;
+    --tr-color-luminance1: #1f232a
 }
 
 ::-webkit-scrollbar {
@@ -346,4 +342,5 @@
 
 .savingsPlanItem {
 	background-color: var(--color-background);
+}
 }
