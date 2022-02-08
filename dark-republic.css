@@ -1,7 +1,7 @@
 @-moz-document domain("app.traderepublic.com") {
 /* ==UserStyle==
 @name           Dark Republic
-@version        1.0.1
+@version        1.1.0
 @description    Dark Republic Style for Trade Republic web application.
 @author         Creyo
 @namespace      https://github.com/officialcreyo/dark-republic
@@ -9,339 +9,86 @@
 
 :root {
 	--dark: #1f232a;
-	--darken: #252a33;
-	--darker: #333943;
-	--color-background: #252a33;
-	--color-foreground: #f3f6f8;
-	--color-text-primary: #fff;
-	--color-text-secondary: #c8cbce;
-	--color-highlight: #36df77;
-	--color-link: #00a8ff;
-	--color-banner-nav-link: #95a0a6;
-	--color-banner-nav-focus: #000;
-	--color-banner-nav-active: #fff;
-	--color-banner-nav-visited: #95a0a6;
-	--color-banner-nav-focused-background: #eff4f6;
-	--color-page-banner-divider: #f3f6f8;
-	--color-footer: #8b8e8f;
-	--color-overlay: rgba(184, 189, 192, 0.5);
-	--color-overlay-shadow: rgba(0, 0, 0, 0.2);
-	--color-content-overlay: rgba(17, 20, 25, 0.8);
-	--color-content-overlay-mobile: rgba(0, 0, 0, 0.4);
-	--color-warning-indicator: #ffb018;
-	--color-search-background: #1f232a;
-	--color-search-foreground: #95a0a6;
-	--color-search-hover-background: #333943;
-	--color-search-focused-background: #333943;
-	--color-search-drawer-background: #252a33;
-	--color-search-drawer-focused-background: #333943;
-	--color-search-drawer-border: #252a33;
-	--color-search-drawer-section-divider: #f3f7f9;
-	--color-search-result-more-focused: #95a0a6;
-	--color-search-result-tags: #95a0a6;
-	--color-search-result-none-icon: #c8d1d5;
-	--color-search-result-placeholder: #eff4f6;
-	--color-search-placeholder: #c8d1d5;
-	--color-search-clear: #c8d1d5;
-	--color-instrument-icon-background: #f3f7f9;
-	--color-chart-text: #dcdfe1;
-	--color-chart-text-active: #fff;
-	--color-chart-text-active-background: #eff4f6;
-	--color-chart-plot-line: #e5ecef;
-	--color-chart-positive-performance-foreground: #36df77;
-	--color-chart-positive-performance-background: #1f232a;
-	--color-chart-negative-performance-foreground: #ff5e4c;
-	--color-chart-negative-performance-background: #1f232a;
-	--color-chart-reference-label-background: #1f232a;
-	--color-chart-reference-label-text: #fff;
-	--color-chart-label-positive-background: #e8fcf0;
-	--color-chart-label-negative-background: #fae7e3;
-	--color-chart-hover-label-background: #96a1a8;
-	--color-chart-label-border: #1f232a;
-	--color-chart-dot-stroke: #fff;
-	--color-button-link-color: #009dff;
-	--color-button-link-color-active: #0389e0;
-	--color-button-link-color-disabled: #80ceff;
-	--color-button-primary-background: #009dff;
-	--color-button-primary-background-disabled: #80ceff;
-	--color-button-primary-background-active: #3c87d9;
-	--color-button-primary-text: #fff;
-	--color-button-primary-shadow: rgba(0, 0, 0, 0.1);
-	--color-button-secondary-background: #eff4f6;
-	--color-button-secondary-background-hover: #e5eaec;
-	--color-button-secondary-background-active: #d2d6d8;
-	--color-button-secondary-text: #000;
-	--color-button-secondary-text-disabled: rgba(0, 0, 0, 0.16);
-	--color-button-secondary-loading: #9c9ea3;
-	--color-button-primary-positive-background: #36df77;
-	--color-button-primary-positive-background-disabled: #96f2b9;
-	--color-button-primary-positive-background-active: #1cb155;
-	--color-button-primary-negative-background: #ff5e4c;
-	--color-button-primary-negative-background-disabled: #ffafa6;
-	--color-button-primary-negative-background-active: #c53e2e;
-	--color-button-secondary-positive: #22d466;
-	--color-button-secondary-positive-disabled: #90e9b2;
-	--color-button-secondary-positive-background: #e4f9ec;
-	--color-button-secondary-positive-background-hover: #d2f6e0;
-	--color-button-secondary-positive-background-active: #c1f3d4;
-	--color-button-secondary-negative: #ff5e4c;
-	--color-button-secondary-negative-disabled: #f5a49b;
-	--color-button-secondary-negative-background: #fce8e6;
-	--color-button-secondary-negative-background-hover: #fbdad7;
-	--color-button-secondary-negative-background-active: #f9ccc7;
-	--color-button-destructive-background: #fce8e6;
-	--color-button-destructive-background-hover: #fbdad7;
-	--color-button-destructive-background-active: #f9ccc7;
-	--color-button-destructive-text: #eb4a38;
-	--color-button-destructive-text-disabled: #f5a49b;
-	--color-accent-button-background: #000;
-	--color-accent-button-background-disabled: #c8d1d5;
-	--color-accent-button-text: #fff;
-	--color-switch-button-text: #95a0a6;
-	--color-switch-button-text-active: #000;
-	--color-switch-button-background-active: #eff4f6;
-	--color-tag-text: #d0d7db;
-	--color-tag-background: #181d24;
-	--color-section-divider: #f3f6f8;
-	--color-section-disclaimer: #8090a0;
-	--color-description-title: #95a0a6;
-	--color-range-slider-background: #f4f5f9;
-	--color-table-column-header: #95a0a6;
-	--color-table-column-header-background: #252a33;
-	--color-table-border: #1f232a;
-	--color-table-row-hover: #1f232a;
-	--color-outline: #000;
-	--color-positive-performance: #36df77;
-	--color-negative-performance: #ff5e4c;
-	--color-list-item-background: #fff;
-	--color-list-item-background-hover: #1f232a;
-	--color-list-item-background-active: #1f232a;
-	--color-list-item-selected-background: #1f232a;
-	--color-list-item-selected-background-hover: #2b3039;
-	--color-list-item-selected-background-active: #ebeff2;
-	--color-list-item-disabled-text: #b8bdc0;
-	--color-tab-active: #fff;
-	--color-tab-default: #95a0a6;
-	--color-tab-disabled: #c8d1d5;
-	--color-tab-hover: #c8d1d5;
-	--color-tab-focus: #c8d1d5;
-	--color-tab-item-count: #95a0a6;
-	--color-button-hover: #95a0a6;
-	--color-stock-isin-number: #95a0a6;
-	--color-side-modal-background: #1f232a;
-	--color-side-modal-shadow: rgba(0, 0, 0, 0.05);
-	--color-side-modal-heading: #fff;
-	--color-side-modal-subheading: #95a0a6;
-	--color-side-modal-header-separator: #f3f6f8;
-	--color-side-modal-footer: #b8bdc0;
-	--color-side-modal-secondary-footer: #83909e;
-	--color-side-modal-secondary-footer-background: #f3f6f8;
-	--color-close-icon: #95a0a6;
-	--color-close-button-background: #e5ecef;
-	--color-close-button-icon: #95a0a6;
-	--color-filter-area-divider: #f3f6f8;
-	--color-filter-background: #252a33;
-	--color-filter-count: #95a0a6;
-	--color-filter-count-selected: #fff;
-	--color-filter-scrolled-divider: #f5f8fa;
-	--color-filter-show-button-background: #009dff;
-	--color-filter-show-button-text: #fff;
-	--color-filter-show-button-shadow: #8090a0;
-	--color-filter-clear-button-text: #ff5e4c;
-	--color-filter-clear-button-background: #fff3f2;
-	--color-filter-subtitle: #95a0a6;
-	--color-filter-toggle-text: #fff;
-	--color-filter-toggle-shadow: rgba(0, 0, 0, 0.2);
-	--color-filter-toggle-background: #000;
-	--color-filter-toggle-selected-background: #009dff;
-	--color-filter-selected-indicator-background: #e8f5fc;
-	--color-filter-selected-indicator-text: #009dff;
-	--color-filter-modal-header-divider: #eff4f6;
-	--color-content-section-border: #2e3235;
-	--color-content-section-shadow: rgba(0, 0, 0, 0.1);
-	--color-dropdown-border: #333943;
-	--color-dropdown-shadow: rgba(0, 0, 0, 0.2);
-	--color-dropdown-button-text: #009dff;
-	--color-dropdown-button-primary-background: #e8f5fc;
-	--color-dropdown-list-text: #95a0a6;
-	--color-dropdown-list-text-disabled: #c8cdd0;
-	--color-dropdown-list-subtitle: #8b8e8f;
-	--color-dropdown-list-background: #252a33;
-	--color-dropdown-list-background-hover: #1f232a;
-	--color-loading-placeholder: #1f232a;
-	--color-alert-info-background-bg: #f8f9fa;
-	--color-alert-info-text: #000;
-	--color-alert-warning-background-bg: #1f232a;
-	--color-alert-warning-icon: #feb800;
-	--color-alert-info-icon: #000;
-	--color-alert-icon-foreground: #fff;
-	--color-market-executed-exchange: #e5ecef;
-	--color-market-executed-checkmark: #36df77;
-	--color-market-executed-checkmark-background: #e8fcf0;
-	--color-market-executed-checkmark-border: #fff;
-	--color-orders-empty-border: #d9dfe4;
-	--color-order-background-hover: #1f232a;
-	--color-order-background-active: #171a20;
-	--color-order-mode-selector: #009dff;
-	--color-order-mode-selector-background: #e8f5fc;
-	--color-order-overview-empty-state-input: #f3f7f9;
-	--color-order-overview-empty-state-label: #95a0a6;
-	--color-savings-plan-overview-hint: #8090a0;
-	--color-savings-plan-interval-text: #8a9bab;
-	--color-savings-plan-interval-background: #f4f4f4;
-	--color-savings-plan-button-active-background: #e6eef1;
-	--color-savings-plan-indicator-foreground: #029dfe;
-	--color-savings-plan-indicator-warning-foreground: #ffb211;
-	--color-savings-plan-indicator-background: #e7ecee;
-	--color-savings-plan-indicator-day-label: #8090a0;
-	--color-savings-plan-flow-button-positive-background: #e8fcf0;
-	--color-savings-plan-flow-button-positive-icon: #22d466;
-	--color-order-details-delete-message: #919699;
-	--color-side-modal-message-text: #919699;
-	--color-payout-available-amount-text: #95a0a6;
-	--color-payout-hint-text: #95a0a6;
-	--color-payout-amount-placeholder: #c8d1d5;
-	--color-payout-amount-focus-background: #f3f6f8;
-	--color-payout-bank-icon-background: #eff4f6;
-	--color-payout-withheld-funds-icon: #c8d1d5;
-	--color-payout-divider: #f3f6f8;
-	--color-success-icon: #c8d1d5;
-	--color-success-icon-checkmark-background: #e8fcf0;
-	--color-success-icon-checkmark: #22d466;
-	--color-success-icon-checkmark-border: #fff;
-	--color-prev-step-button-arrow: #8b8e8f;
-	--color-tr-account-logo: #fff;
-	--color-tr-account-logo-background: #000;
-	--color-checkmark-large: #36df77;
-	--color-deposit-text: #95a0a6;
-	--color-securities-text: #95a0a6;
-	--color-securities-background-icon: #eff4f6;
-	--color-download-app-description: #95a0a6;
-	--color-input-error: #ff5e4c;
-	--color-input-error-background: #fff1f0;
-	--color-input-success: #36df77;
-	--color-input-success-background: #e8fcf0;
-	--color-input-caret: #009dff;
-	--color-input-uneditable-text: #8b8e8f;
-	--color-radio-border: #bac1c4;
-	--color-radio-background: #e7ecee;
-	--color-radio-indicator: #009dff;
-	--color-code-input-background: #59667d;
-	--color-pin-input-background: #59667d;
-	--color-phone-number-input-placeholder: #d9dfe4;
-	--color-phone-number-input-border: #e5ecef;
-	--color-integer-input-background: #1f232a;
-	--color-integer-input-hover-background: #1f232a;
-	--color-integer-input-placeholder: #d5dadd;
-	--color-login-description-text: #95a0a6;
-	--color-portfolio-onboarding-subtitle: #b2bcc1;
-	--color-portfolio-position-tag-text: #95a0a6;
-	--color-portfolio-position-tag-background: #eff4f6;
-	--color-portfolio-icon: #8b8e8f;
-	--color-portfolio-investments-placeholder-description: #8b8e8f;
-	--color-savings-plan-icon: #95a0a6;
-	--color-progress-background: #f3f6f8;
-	--color-progress-bar: #009dff;
-	--color-instrument-login-background: #000;
-	--color-instrument-login-text: #fff;
-	--color-instrument-login-description: #758085;
-	--color-instrument-logo-background: #f5f5f5;
-	--color-instrument-not-tradable-banner-background: #ebeff2;
-	--color-instrument-not-tradable-banner-text: #fff;
-	--color-exchange-closed-info: #8b8e8f;
-	--color-instrument-underlying-hover-background: #f3f6f8;
-	--color-instrument-underlying-active-background: #e6eef1;
-	--color-instrument-core-data-title: #8090a0;
-	--color-disclaimer-text: #95a0a6;
-	--color-savings-plan-execution-details-text: #95a0a6;
-	--color-savings-plan-details-separator: #f3f6f8;
-	--color-timeline-detail-text: #95a0a6;
-	--color-timeline-detail-documents-date: #95a0a6;
-	--color-timeline-documents-icon-background: #333943;
-	--color-timeline-documents-button-hover-background: #252a33;
-	--color-timeline-documents-button-active-background: #252a33;
-	--color-order-review-separator: #f3f6f8;
-	--color-order-success-subheading: #95a0a6;
-	--color-checkbox-wrapper-background: #f3f6f8;
-	--color-checkbox-mark: #fff;
-	--color-checkbox-unchecked-border: #bac1c4;
-	--color-checkbox-unchecked-background: #e7ecee;
-	--color-checkbox-unchecked-hover-border: #bac1c4;
-	--color-checkbox-unchecked-hover-background: #d8dee0;
-	--color-checkbox-unchecked-disabled-border: #e7ecee;
-	--color-checkbox-unchecked-disabled-background: #fff;
-	--color-checkbox-checked-border: #009dff;
-	--color-checkbox-checked-background: #009dff;
-	--color-checkbox-checked-hover-border: #0090eb;
-	--color-checkbox-checked-hover-background: #0090eb;
-	--color-checkbox-checked-disabled-border: #7fcdff;
-	--color-checkbox-checked-disabled-background: #7fcdff;
-	--color-change-pin-desc-text: #8090a0;
-	--color-graph-icon-outline: #bac1c4;
-	--color-clock-icon: #b8bdc0;
-	--color-profile-icon: #b8bdc0;
-	--color-cross-icon-background: #fce8e6;
-	--color-cross-icon-glyph: #d84433;
-	--color-notification-border: #ebeff2;
-	--color-notification: #8b8e8f;
-	--color-transparent-banner-background: transparent;
-	--color-transparent-banner-foreground: #fff;
-	--color-public-hero-background: #000;
-	--color-download-app-button-foreground: #fff;
-	--color-download-app-button-background-apple: #000;
-	--color-download-app-button-background-google: #009dff;
-	--color-menu-dots-icon: #fff;
-	--color-savings-plan-button-hover-background: #1f232a;
-	--color-savings-plan-indicator-day-number: #fff;
-    --tr-color-luminance1: #1f232a;
-    --tr-color-background2: #8090a0;
+	--dark-l: #252a33;
+	--dark-ml: #333943;
+    --tr-color-transparent: transparent;
+    --tr-color-non-dynamic-white: #ffffff;
+    --tr-color-non-dynamic-black: #000000;
+    --tr-color-shadow1: rgba(0, 0, 0, .1);
+    --tr-color-shadow2: rgba(0, 0, 0, .2);
+    --tr-color-shadow3: rgba(0, 0, 0, .5);
+    --tr-color-stocks-blue1: #2763ff;
+    --tr-color-background1: #1f232a;
+    --tr-color-background2: rgba(38, 49, 60, .39);
+    --tr-color-background3: rgba(38, 49, 60, .39);
+    --tr-color-background4: rgba(38, 49, 60, .52);
+    --tr-color-background5: rgba(38, 49, 60, .41);
+    --tr-color-background-alternate: #1f232a;
+    --tr-color-background-elevated: #1f232a;
+    --tr-color-luminance1: var(--tr-color-background1);
+    --tr-color-luminance2: var(--tr-color-background1);
+    --tr-color-foreground1: rgba(255, 255, 255, .59);
+    --tr-color-foreground2: rgba(255, 255, 255, .8);
+    --tr-color-foreground3: #fff;
+    --tr-color-primary1: rgba(0, 133, 255, .5);
+    --tr-color-primary2: rgba(0, 133, 255, .8);
+    --tr-color-primary3: rgba(0, 133, 255, .85);
+    --tr-color-primary4: rgba(0, 133, 255, .9);
+    --tr-color-secondary1: rgba(0, 133, 255, .12);
+    --tr-color-secondary2: rgba(0, 133, 255, .28);
+    --tr-color-secondary3: rgba(0, 133, 255, .36);
+    --tr-color-primary1-positive: rgba(0, 203, 57, .5);
+    --tr-color-primary2-positive: rgba(0, 203, 57, .8);
+    --tr-color-primary3-positive: rgba(0, 203, 57, .85);
+    --tr-color-primary4-positive: rgba(0, 203, 57, .9);
+    --tr-color-secondary1-positive: rgba(0, 203, 57, .12);
+    --tr-color-secondary2-positive: rgba(0, 203, 57, .28);
+    --tr-color-secondary3-positive: rgba(0, 203, 57, .36);
+    --tr-color-primary1-negative: rgba(229, 34, 12, .5);
+    --tr-color-primary2-negative: rgba(229, 34, 12, .8);
+    --tr-color-primary3-negative: rgba(229, 34, 12, .85);
+    --tr-color-primary4-negative: rgba(229, 34, 12, .9);
+    --tr-color-secondary1-negative: rgba(229, 34, 12, .12);
+    --tr-color-secondary2-negative: rgba(229, 34, 12, .28);
+    --tr-color-secondary3-negative: rgba(229, 34, 12, .36);
+    --tr-color-primary1-warning: rgba(238, 138, 20, .5);
+    --tr-color-primary2-warning: rgba(238, 138, 20, .8);
+    --tr-color-primary3-warning: rgba(238, 138, 20, .85);
+    --tr-color-primary4-warning: rgba(238, 138, 20, .9);
+    --tr-color-secondary1-warning: rgba(238, 138, 20, .12);
+    --tr-color-secondary2-warning: rgba(238, 138, 20, .28);
+    --tr-color-secondary3-warning: rgba(238, 138, 20, .36);
+    --tr-color-solid-foreground-positive: #33d560;
+    --tr-color-solid-background-positive: #e0f8e7;
+    --tr-color-solid-foreground-negative: #ea4e3d;
+    --tr-color-solid-background-negative: #fbe4e1;
+    --tr-color-overlay-barrier1: rgba(0, 0, 0, .3);
+    --tr-color-overlay-barrier2: rgba(41, 46, 53, .83);
+    --tr-color-overlay-barrier3: rgba(0, 0, 0, .3);
+    --tr-box-shadow-card-content: 0 2px 8px 0 rgba(0, 0, 0, .1);
+    --tr-box-shadow-sidebar-card: 0 2px 10px 0 rgba(0, 0, 0, .07);
+    --tr-box-shadow-sidebar-card-emphasized: 0 4px 34px 0 rgba(0, 0, 0, .05);
+    --tr-box-shadow-dropdown: 0 4px 40px 0 rgba(0, 0, 0, .05);
+    --tr-box-shadow-side-modal: -4px 0 20px rgba(0, 0, 0, .05);
+}
+
+body {
+    color: white;
 }
 
 ::-webkit-scrollbar {
 	width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
 	background: #1f232a;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
 	background: #333943;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	background: #272d35;
-}
-.portfolioCash__amount,
-.portfolioCash__title {
-	font-size: 1rem;
-}
-
-.autosuggestDrawer__footer {
-	padding: 1.5rem 1.25rem;
-	background: #1f232a;
-}
-
-.numericInput {
-	color: white;
-}
-
-.banner:not(.-transparent).-withSeparator:after {
-	opacity: 0.1;
-}
-
-.current-time-tick__label {
-	color: white;
-}
-
-.consentCard__actionsArea {
-	background-image: none;
-}
-
-.savingsPlanItem {
-	background-color: var(--color-background);
 }
 }
