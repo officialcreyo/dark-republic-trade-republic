@@ -1,13 +1,13 @@
-@-moz-document domain("app.traderepublic.com") {
 /* ==UserStyle==
-@name           Dark Republic
-@version        1.1.0
+@name           Dark Republic by Creyo
+@version        1.1.1
 @description    Dark Republic Style for Trade Republic web application.
 @author         Creyo
 @namespace      https://github.com/officialcreyo/dark-republic
 ==/UserStyle== */
-
-:root {
+@-moz-document domain("app.traderepublic.com") {
+    
+:root[data-appearance] {
 	--dark: #1f232a;
 	--dark-l: #252a33;
 	--dark-ml: #333943;
