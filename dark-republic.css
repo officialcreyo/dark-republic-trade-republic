@@ -1,6 +1,6 @@
 /* ==UserStyle==
-@name           Dark Republic by Creyo
-@version        1.1.1
+@name           Dark Republic for Trade Republic by Creyo
+@version        1.1.2
 @description    Dark Republic Style for Trade Republic web application.
 @author         Creyo
 @namespace      https://github.com/officialcreyo/dark-republic
@@ -76,6 +76,10 @@ body {
     color: white;
 }
 
+.codeInput.-isPinCode .codeInput__character.-withValue {
+    background-color: var(--tr-color-primary4);
+}
+    
 ::-webkit-scrollbar {
 	width: 10px;
 }
